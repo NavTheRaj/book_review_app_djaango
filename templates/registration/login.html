@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{%load crispy_forms_tags%}
+{%block title%}Log In{%endblock title%}
+
+{%block content%}
+<div class="row d-flex justify-content-center align-items-center p-5">
+<div class="card shadow d-flex justify-content-center aalign-items-center">
+		<div class="card-body">
+				<center><p class="card-title text-indigo">Log In</p></center>
+		<form method="post">
+		{%csrf_token%}
+		{{form|crispy}}
+		<center><button type="submit" class="btn btn-success">Log In</button></center>
+</form>
+		</div>
+</div>
+</div>
+{%endblock content%}

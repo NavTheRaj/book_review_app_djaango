@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%block title%}Home{%endblock title%}
+
+{%block content%}
+<div class="jumbotron text-center">
+		<h1 class="display-4">Book Sharing App</h1>
+		<p class="lead">A Collection of Books that will ride you from physical to the unknown realms!!</p>
+		<p class="lead">
+		<a class="btn btn-info btn-lg" href="{%url 'article_list'%}" role="button">View All Articles</a>
+		</p>
+</div>
+{%endblock content%}
